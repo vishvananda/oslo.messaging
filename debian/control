@@ -2,11 +2,15 @@ Source: oslo-messaging
 Section: python
 Priority: optional
 Maintainer: Vishvananda Ishaya <vishvananda@gmail.com>
-Build-Depends: debhelper (>= 8.0.0), python-setuptools, python-all (>= 2.6.6-3~), python-d2to1,
- python-pbr
+Build-Depends: debhelper (>= 8.0.0), python-setuptools, python-d2to1,
+ python-pbr,
+ python-all (>= 2.7.3-0ubuntu2.2),
+ python-all-dev (>= 2.7.3-0ubuntu2.2),
+ python-dev (>= 2.7.3-0ubuntu2.2),
+ python-iso8601,
 Standards-Version: 3.9.4
 
 Package: python-oslo.messaging
 Architecture: all
-Depends: ${python:Depends}, ${misc:Depends}
+Depends: ${python:Depends}, ${misc:Depends},
 Description: Messaging for openstack
